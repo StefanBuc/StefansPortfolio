@@ -8,7 +8,7 @@ export const ThemeToggle = () => {
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
 
-    if (savedTheme === "dark") {
+    if (savedTheme === "dark" || !savedTheme) {
       document.documentElement.classList.add("dark");
       setIsDarkMode(true);
     } else {
@@ -33,7 +33,7 @@ export const ThemeToggle = () => {
     <button
       onClick={toggleTheme}
       className={cn(
-        "fixed max-sm:hidden top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300",
+        "inline-flex h-10 w-10 p-2 rounded-full transition-colors duration-300",
         "focus:outline-hidden"
       )}
     >
