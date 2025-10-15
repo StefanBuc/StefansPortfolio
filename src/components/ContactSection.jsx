@@ -19,7 +19,7 @@ export const ContactSection = () => {
 
           <div className="flex flex-col md:flex-row md:space-x-12 justify-center items-center space-y-6 md:space-y-0">
             <div className="flex flex-col md:flex-row items-start space-x-4 sm:space-y-1">
-              <div className="p-3 rounded-full bg-primary/10 mx-auto">
+              <div className="p-3 rounded-full bg-primary/10 mx-auto md:mx-3">
                 <Mail className="h-6 w-6 text-primary" />
               </div>
               <div>
@@ -33,7 +33,7 @@ export const ContactSection = () => {
               </div>
             </div>
             <div className="flex flex-col md:flex-row items-start space-x-4 sm:space-y-1">
-              <div className="p-3 rounded-full bg-primary/10 mx-auto">
+              <div className="p-3 rounded-full bg-primary/10 mx-auto md:mx-3">
                 <Phone className="h-6 w-6 text-primary" />
               </div>
               <div>
@@ -47,7 +47,7 @@ export const ContactSection = () => {
               </div>
             </div>
             <div className="flex flex-col md:flex-row items-start space-x-4 sm:space-y-1">
-              <div className="p-3 rounded-full bg-primary/10 mx-auto">
+              <div className="p-3 rounded-full bg-primary/10 mx-auto md:mx-3">
                 <MapPin className="h-6 w-6 text-primary" />
               </div>
               <div>
