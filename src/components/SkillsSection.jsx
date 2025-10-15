@@ -2,18 +2,18 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const skills = [
-  { name: "HTML/CSS", level: 90, category: "Frontend" },
-  { name: "JavaScript", level: 85, category: "Frontend" },
-  { name: "React", level: 80, category: "Frontend" },
-  { name: "Node.js", level: 70, category: "Backend" },
-  { name: "Express", level: 65, category: "Backend" },
-  { name: "MongoDB", level: 60, category: "Database" },
+  { name: "HTML", level: 85, category: "Frontend" },
+  { name: "CSS", level: 75, category: "Frontend" },
+  { name: "JavaScript", level: 80, category: "Frontend" },
+  { name: "React", level: 75, category: "Frontend" },
+  { name: "Node.js", level: 75, category: "Backend" },
   { name: "SQL", level: 75, category: "Database" },
-  { name: "Python", level: 80, category: "Programming" },
-  { name: "Django", level: 70, category: "Backend" },
-  { name: "Git", level: 85, category: "Tools" },
-  { name: "Docker", level: 60, category: "Tools" },
-  { name: "AWS", level: 50, category: "Cloud" },
+  { name: "Python", level: 90, category: "Programming" },
+  { name: "Java", level: 85, category: "Programming" },
+  { name: "C", level: 85, category: "Programming" },
+  { name: "Git", level: 80, category: "Tools" },
+  { name: "Docker", level: 85, category: "Tools" },
+  { name: "Linux", level: 85, category: "Tools" },
 ];
 
 const categories = [
@@ -23,7 +23,6 @@ const categories = [
   "Database",
   "Programming",
   "Tools",
-  "Cloud",
 ];
 
 export const SkillsSection = () => {
