@@ -7,6 +7,7 @@ const skills = [
   { name: "JavaScript", level: 80, category: "Frontend" },
   { name: "React", level: 75, category: "Frontend" },
   { name: "Node.js", level: 75, category: "Backend" },
+  { name: "FastAPI", level: 80, category: "Backend" },
   { name: "SQL", level: 75, category: "Database" },
   { name: "Python", level: 90, category: "Programming" },
   { name: "Java", level: 85, category: "Programming" },
@@ -29,7 +30,7 @@ export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
 
   const filteredSkills = skills.filter(
-    (skill) => activeCategory === "all" || skill.category === activeCategory
+    (skill) => activeCategory === "all" || skill.category === activeCategory,
   );
 
   return (
@@ -48,7 +49,7 @@ export const SkillsSection = () => {
                 "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
                 activeCategory === category
                   ? "bg-primary text-primary-foreground"
-                  : "bg-secondary/70 text-foreground hover:bd-secondary"
+                  : "bg-secondary/70 text-foreground hover:bd-secondary",
               )}
             >
               {category}

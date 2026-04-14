@@ -21,6 +21,16 @@ const projects = [
     demoUrl: "",
     githubUrl: "https://github.com/StefanBuc/jarvis-project",
   },
+  {
+    id: 3,
+    title: "Quick Compress",
+    description:
+      "A simple web application that allows users to compress videos quickly and easily.",
+    image: "/projects/quickcompress.png",
+    tags: ["React", "TailwindCSS", "FastAPI", "FFmpeg"],
+    demoUrl: "https://compress.stefanb.me/",
+    githubUrl: "https://github.com/StefanBuc/quick-compress",
+  },
 ];
 
 export const ProjectsSection = () => {
@@ -36,7 +46,7 @@ export const ProjectsSection = () => {
           These are some of the projects I've worked on recently. Feel free to
           explore them and check out the code on GitHub!
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, key) => (
             <div
               key={key}
