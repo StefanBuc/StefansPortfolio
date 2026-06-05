@@ -3,13 +3,13 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "UofG Class Finder",
+    title: "Vacation Planner",
     description:
-      "A web application to help University of Guelph students find their way to class!",
-    image: "/projects/UOGClassFindHomePage.png",
-    tags: ["React", "TailwindCSS"],
+      "An AI-powered vacation planning app",
+    image: "/projects/VacationPlanner.png",
+    tags: ["Python", "FastAPI", "React", "TailwindCSS"],
     demoUrl: "",
-    githubUrl: "https://github.com/StefanBuc/UOG-Classfind",
+    githubUrl: "https://github.com/StefanBuc/Vacation-Planner",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const projects = [
     description:
       "A simple web application that allows users to compress videos quickly and easily.",
     image: "/projects/quickcompress.png",
-    tags: ["React", "TailwindCSS", "FastAPI", "FFmpeg"],
+    tags: ["React", "TailwindCSS", "FastAPI", "Python", "FFmpeg"],
     demoUrl: "https://compress.stefanb.me/",
     githubUrl: "https://github.com/StefanBuc/quick-compress",
   },
@@ -50,7 +50,7 @@ export const ProjectsSection = () => {
           {projects.map((project, key) => (
             <div
               key={key}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover h-full flex flex-col"
             >
               <div className="h-48 overflow-hidden">
                 <img
@@ -60,20 +60,23 @@ export const ProjectsSection = () => {
                 />
               </div>
 
-              <div className="p-6">
-                <div className="flex flex-wrap gap02 mb-4">
+              <div className="p-6 flex flex-1 flex-col">
+                <div className="flex flex-wrap content-start gap-2 mb-4 min-h-14">
                   {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium rounded-full bg-primary/20 text-secondary-foreground">
+                    <span
+                      key={tag}
+                      className="px-2 py-1 text-xs font-medium rounded-full bg-primary/20 text-secondary-foreground"
+                    >
                       {tag}
                     </span>
                   ))}
                 </div>
 
                 <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">
+                <p className="text-muted-foreground text-sm mb-6">
                   {project.description}
                 </p>
-                <div className="flex justify-between items-center">
+                <div className="mt-auto flex justify-between items-center">
                   <div className="flex space-x-3">
                     {project.demoUrl !== "" && (
                       <a
